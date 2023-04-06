@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+ <title>IT121 Week1</title>
+ <script type="text/javascript" src="../js/week1script.js"></script>
+	
+  </head>
+  <body>
+    <h1>Brians Info</h1>
+    <p>My name is <span id="name"></span> and I have studied <span id="study"></span>.</p>
+    <p>My goal is to <span id="goal"></span> after completing my courses.</p>
+
+  
+    <script>
+      // Get the elements to update
+      const nameEl = document.getElementById("name");
+      const studyEl = document.getElementById("study");
+      const goalEl = document.getElementById("goal");
+
+      // Set the values of the elements using the variables from script.js
+      nameEl.textContent = firstName + " " + lastName;
+      studyEl.textContent = yearsOfStudy;
+      goalEl.textContent = goal;
+    </script>
+	  
+  </body>
+</html>
