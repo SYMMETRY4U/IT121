@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Week2 Convert Temp</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link href="css/style121.css" rel="stylesheet" type="text/css" />
+  <link href="css/nav.css" rel="stylesheet" type="text/css" />
+
+	    <script>
+
+      function convert() {
+
+        // get the temperature in degrees centigrade
+
+        var tempCent = parseFloat(document.getElementById("tempCent").value);
+
+        // convert to degrees Fahrenheit
+
+        var tempFahr = (9 / 5 * tempCent) + 32;
+		  tempFahr = tempFahr.toFixed(2);
+
+        // display the result on the page
+
+        document.getElementById("result").innerHTML = tempCent + " degrees centigrade is " + tempFahr + " degrees Fahrenheit.";
+
+      }
+
+    </script> 
+	 
+ </head>
+
+
+<body>
+	<div class="wrapper">
+		    <h1>Temperature Converter</h1>
+
+    <label for="tempCent">Enter temperature in degrees centigrade:</label>
+
+    <input type="number" id="tempCent" name="tempCent" step="any">
+
+    <button onclick="convert()">Convert</button>
+
+    <p id="result"></p>
+		<br>
+		
+		
+		
+		
+		
+	</div> <!-- end wrapper -->
+	
+	
+</body>
+</html>
