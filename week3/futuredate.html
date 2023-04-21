@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8" />
+  <title>IT121 Week3 Future Date</title>
+  <meta name="viewport" content="width=device-width" />
+   <link href="css/style121.css" rel="stylesheet" type="text/css" />
+  <link href="css/nav.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="wrapper">
+	<h1>Date 12 Months from Now</h1>
+	<p>The date 12 months from now is: <span id="date"></span></p>
+
+	<script>
+		// Date from now
+		const now = new Date();
+		const future = new Date(now.getFullYear(), now.getMonth() + 12, now.getDate());
+
+		// Get the date
+		const dateString = future.toDateString();
+
+		// Write the date to the page
+		document.getElementById("date").textContent = dateString;
+	</script>
+
+	</div>
+</body>
+</html>
 
